@@ -1,0 +1,196 @@
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .menu-top li {
+        margin-left: 20px;
+    }
+
+    .gallery-content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
+
+    .menu-top li {
+        font-size: 14px;
+        margin-left: 14px;
+        padding: 20px 0;
+    }
+
+    .gallery-content {
+        height: 435px;
+    }
+
+    .gallery-content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .product-dec h3 {
+        font-size: 22px;
+    }
+
+    .price,
+    .single-product h4,
+    .single-price {
+        font-size: 14px;
+    }
+
+    .price span {
+        font-size: 24px;
+    }
+
+    .product-dec ul li {
+        padding: 15px 0 15px 65px;
+    }
+
+    .worko-tabs .tab,
+    .more-pro-area h3 {
+        font-size: 18px;
+    }
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .gallery-content {
+        height: auto;
+    }
+
+    .support {
+        display: none;
+    }
+
+    .header-bg {
+        margin-bottom: 30px;
+    }
+
+    .product-dec {
+        margin-top: 30px;
+    }
+
+    .product-dec h3 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .price span {
+        font-size: 20px;
+    }
+
+    .product-dec ul li::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: 0;
+        background-image: url(../images/tab-before-mobile.png);
+        bottom: 0;
+        right: ;
+        margin: auto;
+    }
+
+    .product-dec ul li {
+        padding: 15px 0 15px 40px;
+    }
+
+    .worko-tabs .tab,
+    .more-pro-area h3 {
+        font-size: 18px;
+    }
+
+    .panel h3 {
+        font-size: 16px;
+    }
+
+    .single-product h4 {
+        font-size: 16px;
+        padding-right: 0;
+    }
+
+    .more-pro-area h3 {
+        font-size: 22px;
+        margin: 50px 0 30px;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+    }
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        20% {
+            left: 0%;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+    }
+
+    div#slider {
+        overflow: hidden;
+    }
+
+    .single-product {
+        width: 20%;
+        float: left;
+    }
+
+    div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+}
+
+/***** Wide Mobile Layout *****/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

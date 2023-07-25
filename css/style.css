@@ -1,0 +1,469 @@
+/*  ================================
+        global area start
+    ================================ */
+
+body {
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        header area start
+    ================================ */
+
+.header-bg {
+    overflow: hidden;
+    background-color: #0F110C;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    margin: 10px 0;
+}
+
+.menu-top {
+    text-align: right;
+}
+
+.menu-top ul {
+    display: inline-block;
+}
+
+.menu-top li {
+	list-style: none;
+	display: inline-block;
+	padding: 28px 0;
+	color: #fff;
+	font-size: 16px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+
+/*======================== Menu Design ==================*/
+
+#menu-switcher,
+.navbar-header > label,
+.switch {
+    display: none;
+}
+
+.menu-container {
+    background-color: #059643;
+}
+
+.menu-container label::before {
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 5px 0 0 #fff, 0 0 0 0 inset, 0 -5px 0 0 #fff;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.switch {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.menu-container label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: absolute !important;
+    right: 8px;
+    top: 4px;
+    width: 40px;
+    z-index: 9999;
+    border: 1px solid #fff;
+}
+
+#navbar ul {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    list-style: outside none none;
+    border-left: 1px solid #fff;
+}
+
+#navbar ul li a {
+    font-size: 15px;
+    color: #fff;
+    line-height: 25px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.5s;
+    border-radius: ;
+    position: relative;
+    padding: 20px 10px;
+}
+
+#navbar ul li:first-child {
+    border-left: 0;
+}
+
+#navbar ul li a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* menu part end */
+
+/*  ================================
+        header area end
+    ================================ */
+
+/*  ================================
+        product area start
+    ================================ */
+.gallery-content {
+    text-align: center;
+    height: 566px;
+    position: relative;
+}
+
+.product-wraper .col-sm-6{
+    padding: 0;
+}
+
+.product-dec {
+    background-color: #E0E0E0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.product-dec h3 {
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.product-dec ul {
+    margin-bottom: 10px;
+}
+
+.product-dec ul li {
+    list-style: none;
+    padding: 27px 80px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.product-dec ul li::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background-image: url(../images/tab-before.png);
+    bottom: 0;
+    right: ;
+    margin: auto;
+}
+
+.product-dec p {
+    font-weight: bold;
+}
+
+.price {
+    color: #1E63DF;
+    font-size: 22px
+}
+
+.price span {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.sub-btn {
+    border: 1px solid #04EF6A;
+    background: #04EF6A;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.sub-btn:focus,
+.sub-btn:hover {
+    color: #fff;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        Accordion area start
+    ================================ */
+/* Android 2.3 :checked fix */
+@-webkit-keyframes fake {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    -webkit-animation: fake 1s infinite;
+    animation: fake 1s infinite;
+}
+
+.worko-tabs {
+    margin: 50px 0;
+}
+
+.worko-tabs .state {
+    position: absolute;
+    left: -10000px;
+}
+
+.worko-tabs .flex-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.worko-tabs .flex-tabs .tab {
+    flex-grow: 1;
+}
+
+.worko-tabs .flex-tabs .panel {
+    background-color: #fff;
+    padding: 20px 0 0;
+    display: none;
+    width: 100%;
+    flex-basis: auto;
+    margin-bottom: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.worko-tabs .tab {
+    display: inline-block;
+    padding: 5px 10px;
+    vertical-align: top;
+    cursor: pointer;
+    border-left: 10px solid #E0E0E0;
+    font-size: 22px;
+}
+
+.worko-tabs .tab:hover {
+    background-color: #fff;
+}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
+    background-color: #fff;
+    cursor: default;
+    border-left-color: #04EF6A;
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .flex-tabs {
+        flex-direction: column;
+    }
+
+    .flex-tabs .tab {
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .flex-tabs .tab:last-of-type {
+        border-bottom: none;
+    }
+
+    .flex-tabs #tab-one-label {
+        order: 1;
+    }
+
+    .flex-tabs #tab-two-label {
+        order: 3;
+    }
+
+    .flex-tabs #tab-three-label {
+        order: 5;
+    }
+
+    .flex-tabs #tab-four-label {
+        order: 7;
+    }
+
+    .flex-tabs #tab-one-panel {
+        order: 2;
+    }
+
+    .flex-tabs #tab-two-panel {
+        order: 4;
+    }
+
+    .flex-tabs #tab-three-panel {
+        order: 6;
+    }
+
+    .flex-tabs #tab-four-panel {
+        order: 8;
+    }
+
+    #tab-one:checked ~ .tabs #tab-one-label,
+    #tab-two:checked ~ .tabs #tab-two-label,
+    #tab-three:checked ~ .tabs #tab-three-label,
+    #tab-four:checked ~ .tabs #tab-four-label {
+        border-bottom: none;
+    }
+
+    #tab-one:checked ~ .tabs #tab-one-panel,
+    #tab-two:checked ~ .tabs #tab-two-panel,
+    #tab-three:checked ~ .tabs #tab-three-panel,
+    #tab-four:checked ~ .tabs #tab-four-panel {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.panel h3 {
+    font-size: 20px;
+    margin: 30px 0 10px;
+    font-weight: bold;
+}
+
+.panel ul {
+    margin-left: 30px;
+}
+
+/*  ================================
+        Accordion area end
+    ================================ */
+
+/*  ================================
+        More Products area start
+    ================================ */
+.more-pro-area h3 {
+    font-size: 22px;
+    margin: 50px 0 10px;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+div#slider {
+    overflow: hidden;
+}
+
+.single-product {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.single-product img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.single-product h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    padding-right: 20px;
+}
+
+.single-price {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1E63DF;
+}
+
+div#slider figure {
+    width: 100%;
+    overflow: hidden;
+}
+
+#controls,
+#bullets {
+    display: none;
+}
+
+/*  ================================
+        More Products area end
+    ================================ */
